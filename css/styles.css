@@ -51,10 +51,11 @@
   background-color: #7400ff;
 }
 
-/*#app button.b3 {
+#app button.b3 {
   background-color: #340ce8;
 }
-#app p > strong {
+
+/*#app p > strong {
   color: #e82c0c;
 }
 #app hr {
