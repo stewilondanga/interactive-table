@@ -86,10 +86,11 @@
   box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
 }
 
-/*#app table thead tr.spacer {
+#app table thead tr.spacer {
   height: 20px;
 }
-#app table tbody tr > td {
+
+/*#app table tbody tr > td {
   width: 60px;
   height: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
