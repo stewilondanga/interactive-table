@@ -63,11 +63,12 @@
   margin: 30px 0;
 }
 
-/*#app table {
+#app table {
   margin-left: auto;
   margin-right: auto;
 }
-#app table thead tr {
+
+/*#app table thead tr {
   border-bottom: 50px solid #fff;
 }
 #app table thead tr > td {
