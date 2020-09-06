@@ -20,13 +20,14 @@
   text-align: center;
 }
 
-/*#app h2 {
+#app h2 {
   color: #7400ff;
   font-weight: 100;
   font-size: 3rem;
   margin-bottom: 0;
 }
-#app button {
+
+/*#app button {
   border: 0;
   padding: 10px 35px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
