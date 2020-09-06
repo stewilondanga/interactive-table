@@ -55,10 +55,11 @@
   background-color: #340ce8;
 }
 
-/*#app p > strong {
+#app p>strong {
   color: #e82c0c;
 }
-#app hr {
+
+/*#app hr {
   margin: 30px 0;
 }
 #app table {
