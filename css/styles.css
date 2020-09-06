@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,112 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+#app {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+#app h2 {
+  color: #7400ff;
+  font-weight: 100;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+#app button {
+  border: 0;
+  padding: 10px 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: #fff;
+  font-weight: 700;
+}
+#app button:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+#app button.b0 {
+  background-color: #e82c0c;
+}
+#app button.b1 {
+  background-color: #ff0dff;
+}
+#app button.b2 {
+  background-color: #7400ff;
+}
+#app button.b3 {
+  background-color: #340ce8;
+}
+#app p > strong {
+  color: #e82c0c;
+}
+#app hr {
+  margin: 30px 0;
+}
+#app table {
+  margin-left: auto;
+  margin-right: auto;
+}
+#app table thead tr {
+  border-bottom: 50px solid #fff;
+}
+#app table thead tr > td {
+  width: 60px;
+  height: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+#app table thead tr > td:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+#app table thead tr > td.selectedClass {
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+#app table thead tr.spacer {
+  height: 20px;
+}
+#app table tbody tr > td {
+  width: 60px;
+  height: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+#app table tbody tr > td:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.c-0 {
+  background-color: #303030;
+}
+
+.c-1 {
+  background-color: #e82c0c;
+}
+
+.c-2 {
+  background-color: #ff0000;
+}
+
+.c-3 {
+  background-color: #e80c7a;
+}
+
+.c-4 {
+  background-color: #ff0dff;
+}
+
+.c-5 {
+  background-color: #a900e8;
+}
+
+.c-6 {
+  background-color: #7400ff;
+}
+
+.c-7 {
+  background-color: #340ce8;
+}
+
+.c-8 {
+  background-color: #f8f8f8;
 }
 
 .containers {
