@@ -10,53 +10,54 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-milimu-369995168/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
-    </div>
+    <a href="https://www.linkedin.com/in/stewart-milimu-369995168/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
 
-    <div id="app">
-      <h2>CPC - Interactive HTML Table</h2>
-      <p>An interactive Vue JS based Pixel drawing thing. <strong>click the tiles</strong> to create pixel art!</p>
-      <p><button class="b0" type="button" @click="save">Save</button>
-        <button class="b1" type="button" v-if="savedPicture.length > 0" @click="load">Load</button>
-        <button class="b2" type="button" @click="reset">Reset</button>
-        <button class="b3" type="button" @click="clear">Clear</button></p>
-      <hr/>
-      <table>
-        <tbody>
-          <thead>
-            <tr>
-              <td v-for="(col, index) in cols" @click="setSelectedClass( 'c-'+index )" :class="[{ selectedClass: ('c-'+index == selectedClass) }, 'c-'+index]"></td>
-            </tr>
-            <tr class="spacer"></tr>
-          </thead>
-          <tr v-for="(row, row_key) in rows">
-            <td v-for="(col, col_key) in cols" @click="updatePicture((row_key*rows) + col_key)" :class="picture[(row_key*rows) + col_key]">
-              <!-- <span style="color: red;">{{ (row_key*rows) + col_key }} </span> -->
-            </td>
+  <div id="app">
+    <h2>CPC - Interactive HTML Table</h2>
+    <p>An interactive Vue JS based Pixel drawing thing. <strong>click the tiles</strong> to create pixel art!</p>
+    <p><button class="b0" type="button" @click="save">Save</button>
+      <button class="b1" type="button" v-if="savedPicture.length > 0" @click="load">Load</button>
+      <button class="b2" type="button" @click="reset">Reset</button>
+      <button class="b3" type="button" @click="clear">Clear</button></p>
+    <hr />
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <td v-for="(col, index) in cols" @click="setSelectedClass( 'c-'+index )" :class="[{ selectedClass: ('c-'+index == selectedClass) }, 'c-'+index]"></td>
           </tr>
-        </tbody>
-      </table>
-    </div>
+          <tr class="spacer"></tr>
+        </thead>
+        <tr v-for="(row, row_key) in rows">
+          <td v-for="(col, col_key) in cols" @click="updatePicture((row_key*rows) + col_key)" :class="picture[(row_key*rows) + col_key]">
+            <!-- <span style="color: red;">{{ (row_key*rows) + col_key }} </span> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <section id="contact">
     <div class="overlay">
       <div class="containers">
 
         <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
+          <script>
+            with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+            h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+            while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+            document.write(h + '</table>')
+          </script>
+        </h1>
 
       </div>
     </div>
